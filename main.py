@@ -24,5 +24,20 @@ class Stack:
         print(f"Кількість рядків у стеку: {count}")
         return count
 
+    def is_empty(self):
+        if not self.stack:
+            print("Стек порожній.")
+            return True
+        else:
+            print("Стек не порожній.")
+            return False
+
+    def is_full(self):
+        if len(self.stack) == self.max_size:
+            print("Стек повний.")
+            return True
+        else:
+            print("Стек не повний.")
+            return False
 
 
