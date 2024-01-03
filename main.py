@@ -55,3 +55,36 @@ class Stack:
 def main():
     max_size = int(input("Введіть максимальний розмір стеку: "))
     stack = Stack(max_size)
+
+    while True:
+        print("\nМеню:")
+        print("1. Розмістити рядок у стек")
+        print("2. Виштовхнути рядок зі стеку")
+        print("3. Підрахунок кількості рядків у стеку")
+        print("4. Перевірка, чи порожній стек")
+        print("5. Перевірка, чи повний стек")
+        print("6. Очищення стеку")
+        print("7. Отримати значення без виштовхнення верхнього рядка зі стеку")
+        print("0. Вийти з програми")
+
+        choice = input("Виберіть опцію (1-8): ")
+
+        if choice == '1':
+            item = input("Введіть рядок для розміщення у стеку: ")
+            stack.push(item)
+        elif choice == '2':
+            stack.pop()
+        elif choice == '3':
+            stack.count()
+        elif choice == '4':
+            stack.is_empty()
+        elif choice == '5':
+            stack.is_full()
+        elif choice == '6':
+            stack.clear()
+        elif choice == '7':
+            stack.peek()
+        elif choice == '0':
+            break
+        else:
+            print("Неправильний вибір. Спробуйте ще раз.")
