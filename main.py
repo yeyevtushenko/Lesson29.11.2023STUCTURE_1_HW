@@ -10,4 +10,14 @@ class Stack:
         else:
             print("Стек повний. Неможливо додати рядок.")
 
+    def pop(self):
+        if self.stack:
+            item = self.stack.pop()
+            print(f"Рядок '{item}' виштовхнуто зі стеку.")
+            return item
+        else:
+            print("Стек порожній. Неможливо виштовхнути рядок.")
+            return None
+
+
 
