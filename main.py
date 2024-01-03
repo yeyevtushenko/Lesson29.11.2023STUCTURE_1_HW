@@ -40,4 +40,6 @@ class Stack:
             print("Стек не повний.")
             return False
 
-
+    def clear(self):
+        self.stack = []
+        print("Стек очищено.")
