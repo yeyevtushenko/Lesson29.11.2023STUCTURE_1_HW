@@ -88,3 +88,6 @@ def main():
             break
         else:
             print("Неправильний вибір. Спробуйте ще раз.")
+
+if __name__ == "__main__":
+    main()
