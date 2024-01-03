@@ -51,3 +51,7 @@ class Stack:
             return item
         else:
             print("Стек порожній. Неможливо отримати значення.")
+
+def main():
+    max_size = int(input("Введіть максимальний розмір стеку: "))
+    stack = Stack(max_size)
