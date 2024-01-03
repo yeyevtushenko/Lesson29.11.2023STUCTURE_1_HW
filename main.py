@@ -19,5 +19,10 @@ class Stack:
             print("Стек порожній. Неможливо виштовхнути рядок.")
             return None
 
+    def count(self):
+        count = len(self.stack)
+        print(f"Кількість рядків у стеку: {count}")
+        return count
+
 
 
