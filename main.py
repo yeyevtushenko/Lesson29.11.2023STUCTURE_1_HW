@@ -43,3 +43,11 @@ class Stack:
     def clear(self):
         self.stack = []
         print("Стек очищено.")
+
+    def peek(self):
+        if self.stack:
+            item = self.stack[-1]
+            print(f"Значення верхнього рядка у стеку: '{item}'")
+            return item
+        else:
+            print("Стек порожній. Неможливо отримати значення.")
